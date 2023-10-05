@@ -1,7 +1,8 @@
 //Global Variables
 int appWidth, appHeight;
-float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
+float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight;
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
+PImage picBackground;
 //String ; //All text variables as name=value pairs
 //PFont ; //All fonts used
 //color ; //colour palette & inks
@@ -16,9 +17,25 @@ void setup() {
   //Character Escapes, tab, new
   //
   //fullScreen();
-  size(600, 400);
+  size(900, 500);
   appWidth = width;
   appHeight = height;
+  backgroundImageX = appWidth*0;
+  backgroundImageY = appHeight*0;
+  backgroundImageWidth = appWidth-1;
+  backgroundImageHeight = appHeight-1;
+  picBackground = loadImage("../images used/eid.jpg");
+  //fullScreen(); //displayWidth, displayHeight
+  size( 900, 500 ); //Landscape
+  // Copy Display Orientation
+  appWidth = width;
+  appHeight = height;
+  //
+  //Population
+  //
+  //DIVs
+  //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
+  //
   //
   //Population
   xRectBackground = appWidth*0;
@@ -39,6 +56,11 @@ void setup() {
 } //End setup
 //
 void draw() {
+  //fullScreen(); //displayWidth, displayHeight
+  size( 900, 500 ); //Landscape
+  // Copy Display Orientation
+  appWidth = width;
+  appHeight = height;
   
 } //End draw
 //
