@@ -56,12 +56,7 @@ void setup() {
 } //End setup
 //
 void draw() {
-  //fullScreen(); //displayWidth, displayHeight
-  size( 900, 500 ); //Landscape
-  // Copy Display Orientation
-  appWidth = width;
-  appHeight = height;
-  
+  image( picBackground, xRectBackground, yRectBackground, widthRectBackground, heightRectBackground );
 } //End draw
 //
 void keyPressed() {
