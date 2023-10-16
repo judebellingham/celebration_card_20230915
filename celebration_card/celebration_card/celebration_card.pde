@@ -11,7 +11,6 @@ PImage picBackground;
 //color ; //colour palette & inks
 int sizeFont, size; //Text Variables
 PFont titleFont;
-
 //
 //
 void setup() {
